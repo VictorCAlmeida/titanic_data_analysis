@@ -188,7 +188,7 @@ Para garantir a qualidade da análise, realizei as seguintes transformações:
     ```
 
 ### 3. Análises e Visualizações
-Com os dados limpos e enriquecidos, utilizei `groupby`, tabelas de contingência e matriz de correlação para explorar as relações entre as variáveis e a sobrevivência. Os resultados foram consolidados em gráficos para uma comunicação clara.
+Com os dados limpos e enriquecidos, utilizei `groupby`, tabelas de contingência e matriz de correlação para explorar as relações entre as variáveis e a sobrevivência. Os resultados foram consolidados em gráficos para uma comunicação clara. **Todos os gráficos são salvos automaticamente na pasta `images/` com alta resolução (300 dpi).**
 
 ### 4. Matriz de Correlação
 Analisei a correlação entre as principais variáveis numéricas:
@@ -198,7 +198,7 @@ Analisei a correlação entre as principais variáveis numéricas:
 - `Pclass` x `Fare`: **-0,55** (forte correlação negativa - esperado)
 
 ## 📈 Visualizações
-Abaixo estão as principais visualizações geradas na análise:
+Abaixo estão as principais visualizações geradas na análise, todas com a paleta de cores em **verde escuro** para consistência visual:
 
 ### 1. Matriz de Correlação
 ![Correlation Heatmap](images/correlation_heatmap.png)
@@ -294,6 +294,8 @@ Siga os passos abaixo para rodar a análise em sua máquina local.
     ```bash
     python Titanic.py
     ```
+    
+    **Nota:** O script criará automaticamente a pasta `images/` (se não existir) e salvará todos os gráficos nela com alta resolução.
 
 ## 📁 Estrutura do Projeto
 ```
@@ -302,7 +304,7 @@ titanic-analysis/
 ├── data/                       # Dados utilizados no projeto
 │   └── titanic_dataset.csv
 │
-├── images/                      # Imagens e gráficos gerados (criar esta pasta)
+├── images/                      # Imagens e gráficos gerados automaticamente
 │   ├── correlation_heatmap.png
 │   ├── survival_by_sex.png
 │   ├── survival_by_class.png
@@ -320,7 +322,7 @@ titanic-analysis/
 │   ├── survival_by_familycategory.png
 │   └── survival_by_isalone.png
 │
-├── Titanic.py                   # Script principal da análise
+├── Titanic.py                   # Script principal da análise (com salvamento automático)
 ├── requirements.txt             # Dependências do projeto (opcional)
 └── README.md                     # Documentação principal (este arquivo)
 ```
@@ -352,5 +354,3 @@ Analista de Dados
 
 **Data da Análise:** Março 2026  
 **Licença:** MIT
-
----
