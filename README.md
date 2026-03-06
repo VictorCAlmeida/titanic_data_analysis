@@ -201,67 +201,67 @@ Analisei a correlação entre as principais variáveis numéricas:
 Abaixo estão as principais visualizações geradas na análise, todas com a paleta de cores em **verde escuro** para consistência visual:
 
 ### 1. Matriz de Correlação
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Correlation Heatmap](images/Correlation%20Heatmap.png)
 *Heatmap mostrando as correlações entre as principais variáveis numéricas*
 
 ### 2. Sobrevivência por Sexo
-![Survival by Sex](images/survival_by_sex.png)
+![Survival by Sex](images/Survival%20by%20Sex.png)
 *Mulheres: 74,2% | Homens: 18,9%*
 
 ### 3. Sobrevivência por Classe
-![Survival by Class](images/survival_by_class.png)
+![Survival by Class](images/Survival%20by%20Class.png)
 *1ª Classe: 63,0% | 2ª Classe: 47,3% | 3ª Classe: 24,2%*
 
 ### 4. Interação entre Classe e Sexo
-![Sex and Class Interaction](images/sex_class_survival.png)
+![Sex and Class Interaction](images/Sex%20and%20Class%20Interaction.png)
 *O efeito combinado de gênero e classe social na sobrevivência*
 
 ### 5. Heatmap Sexo x Classe
-![Sex Class Heatmap](images/sex_class_heatmap.png)
+![Sex Class Heatmap](images/Sex%20Class%20Heatmap.png)
 *Visualização em calor da interação entre sexo e classe*
 
 ### 6. Idade vs Sobrevivência
-![Age Boxplot](images/age_boxplot.png)
+![Age Boxplot](images/Age%20Boxplot.png)
 *Distribuição de idade entre sobreviventes e não sobreviventes*
 
 ### 7. Distribuição de Idade
-![Age Distribution](images/age_distribution.png)
+![Age Distribution](images/Age%20Distribution.png)
 *Histograma da distribuição etária dos passageiros*
 
 ### 8. Idade por Classe
-![Age by Class](images/age_by_class.png)
+![Age by Class](images/Age%20by%20Class.png)
 *Distribuição de idade em cada classe social*
 
 ### 9. Distribuição de Tarifa
-![Fare Distribution](images/fare_distribution.png)
+![Fare Distribution](images/Fare%20Distribution.png)
 *Histograma da tarifa paga (distribuição original)*
 
 ### 10. Distribuição Log da Tarifa
-![Fare Log Distribution](images/fare_log_distribution.png)
+![Fare Log Distribution](images/Fare%20Log%20Distribution.png)
 *Distribuição da tarifa em escala logarítmica*
 
 ### 11. Sobrevivência por Porto
-![Survival by Embarked](images/survival_by_embarked.png)
+![Survival by Embarked](images/Survival%20by%20Embarked.png)
 *Cherbourg: 55,4% | Queenstown: 38,9% | Southampton: 33,7%*
 
 ### 12. Distribuição de Classes por Porto
-![Class by Embarked](images/class_by_embarked.png)
+![Class by Embarked](images/Class%20by%20Embarked.png)
 *Composição de classes sociais em cada porto de embarque*
 
 ### 13. Sobrevivência por Faixa de Tarifa
-![Survival by Fare Group](images/survival_by_faregroup.png)
+![Survival by Fare Group](images/Survival%20by%20Fare%20Group.png)
 *Quanto maior a tarifa, maior a taxa de sobrevivência*
 
 ### 14. Sobrevivência por Faixa Etária
-![Survival by Age Group](images/survival_by_agegroup.png)
+![Survival by Age Group](images/Survival%20by%20Age%20Group.png)
 *Crianças: 53,0% | Adolescentes: 41,6% | Adultos: 36,9% | Idosos: 22,2%*
 
 ### 15. Sobrevivência por Categoria de Família
-![Survival by Family Category](images/survival_by_familycategory.png)
+![Survival by Family Category](images/Survival%20by%20Family%20Category.png)
 *Sozinho: 30,3% | Pequena: 57,5% | Média: 39,1% | Grande: 25,0%*
 
 ### 16. Sobrevivência Sozinho vs Acompanhado
-![Survival by IsAlone](images/survival_by_isalone.png)
+![Survival by IsAlone](images/Survival%20by%20IsAlone.png)
 *Acompanhados tiveram vantagem significativa na evacuação*
 
 ## 🔧 Como Reproduzir o Projeto
@@ -305,22 +305,22 @@ titanic-analysis/
 │   └── titanic_dataset.csv
 │
 ├── images/                      # Imagens e gráficos gerados automaticamente
-│   ├── correlation_heatmap.png
-│   ├── survival_by_sex.png
-│   ├── survival_by_class.png
-│   ├── sex_class_survival.png
-│   ├── sex_class_heatmap.png
-│   ├── age_boxplot.png
-│   ├── age_distribution.png
-│   ├── age_by_class.png
-│   ├── fare_distribution.png
-│   ├── fare_log_distribution.png
-│   ├── survival_by_embarked.png
-│   ├── class_by_embarked.png
-│   ├── survival_by_faregroup.png
-│   ├── survival_by_agegroup.png
-│   ├── survival_by_familycategory.png
-│   └── survival_by_isalone.png
+│   ├── Correlation Heatmap.png
+│   ├── Survival by Sex.png
+│   ├── Survival by Class.png
+│   ├── Sex and Class Interaction.png
+│   ├── Sex Class Heatmap.png
+│   ├── Age Boxplot.png
+│   ├── Age Distribution.png
+│   ├── Age by Class.png
+│   ├── Fare Distribution.png
+│   ├── Fare Log Distribution.png
+│   ├── Survival by Embarked.png
+│   ├── Class by Embarked.png
+│   ├── Survival by Fare Group.png
+│   ├── Survival by Age Group.png
+│   ├── Survival by Family Category.png
+│   └── Survival by IsAlone.png
 │
 ├── Titanic.py                   # Script principal da análise (com salvamento automático)
 ├── requirements.txt             # Dependências do projeto (opcional)
