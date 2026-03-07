@@ -14,6 +14,7 @@
 - [Principais Insights](#-principais-insights)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Metodologia](#-metodologia)
+- [Decisões de Tratamento dos Dados](#-decisões-de-tratamento-dos-dados)
 - [Visualizações](#-visualizações)
 - [Como Reproduzir o Projeto](#-como-reproduzir-o-projeto)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
@@ -197,6 +198,35 @@ Analisei a correlação entre as principais variáveis numéricas:
 - `Survived` x `HasCabin`: **+0,32** (ter cabine registrada = mais sobrevivência)
 - `Pclass` x `Fare`: **-0,55** (forte correlação negativa - esperado)
 
+## 🧹 Decisões de Tratamento dos Dados
+
+Durante a preparação dos dados para análise, as seguintes decisões foram tomadas:
+
+### Valores Nulos
+- **Idade (Age)** : 177 valores ausentes (19,9% do total) foram preenchidos com a **mediana (28 anos)** para evitar distorções por outliers, garantindo robustez na análise
+- **Porto de Embarque (Embarked)** : Apenas 2 valores ausentes (0,2%) - optou-se por **remover essas linhas** por representarem parcela insignificante do dataset
+- **Cabine (Cabin)** : 687 valores ausentes (77%) - devido à alta taxa de missing, não foi possível preencher. Estratégia adotada:
+  - Criada feature `HasCabin` (1 = tinha cabine registrada, 0 = não tinha)
+  - Extraída primeira letra da cabine quando disponível para análise do `Deck`
+  - Valores sem registro classificados como 'U' (Unknown)
+
+### Criação de Novas Variáveis (Feature Engineering)
+- **`FamilySize`** : Soma de `SibSp` + `Parch` + 1 (incluindo o próprio passageiro) - permite analisar o impacto do tamanho familiar na sobrevivência
+- **`IsAlone`** : Indicador binário se o passageiro viajava sozinho (1) ou acompanhado (0) - criado a partir de `FamilySize`
+- **`Deck`** : Primeira letra da cabine (ou 'U' para Unknown) - possibilita análise por deck mesmo com muitos dados faltantes
+- **`AgeGroup`** : Classificação etária (Child, Teen, Adult, Senior) - facilita a comparação entre faixas etárias
+- **`FamilyCategory`** : Categorização do tamanho familiar (Sozinho, Pequena, Média, Grande) - agrupa famílias por porte
+- **`FareGroup`** : Faixas de tarifa baseadas em quartis (Baixa, Média, Alta, Muito Alta) - permite analisar o poder aquisitivo de forma categorizada
+- **`FareLog`** : Transformação logarítmica da tarifa - normaliza a distribuição assimétrica para melhor visualização
+
+### Ajustes de Tipagem
+- `Survived`: Convertido para categoria nas visualizações
+- `Pclass`: Tratado como variável categórica ordinal
+- `Sex`: Convertido para categoria
+- Novas features categóricas (`AgeGroup`, `FamilyCategory`, `FareGroup`) devidamente tipadas como category
+
+Essas decisões foram tomadas para maximizar a qualidade da análise exploratória, preservando ao máximo a integridade dos dados originais e permitindo extrair o maior número possível de insights relevantes.
+
 ## 📈 Visualizações
 Abaixo estão as principais visualizações geradas na análise, todas com a paleta de cores em **verde escuro** para consistência visual:
 
@@ -291,6 +321,7 @@ Siga os passos abaixo para rodar a análise em sua máquina local.
 4.  **Coloque o dataset na pasta correta**
     - Crie uma pasta `data/` na raiz do projeto
     - Adicione o arquivo `titanic_dataset.csv` dentro dela
+    - **Nota:** Utilize a base disponível em: https://drive.google.com/file/d/1IHptTxjbUMRG16xpC39fcliba_-Z_J9d/
 
 5.  **Execute o script principal**
     ```bash
@@ -326,8 +357,7 @@ titanic-analysis/
 │   └── survival_by_title.png
 │
 ├── Titanic.py                   # Script principal da análise
-├── requirements.txt             # Dependências do projeto (opcional)
-└── README.md                     # Documentação principal (este arquivo)
+└── README.md                     # Documentação principal 
 ```
 
 ## ⚠️ Limitações e Próximos Passos
@@ -357,6 +387,3 @@ Analista de Dados
 
 **Data da Análise:** Março 2026  
 **Licença:** MIT
-
-
-Agora os nomes no README correspondem exatamente aos nomes dos arquivos que estão na pasta `images/`. Isso vai resolver o problema das imagens não aparecerem no GitHub! 🎉
