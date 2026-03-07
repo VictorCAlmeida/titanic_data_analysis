@@ -228,6 +228,7 @@ Durante a preparação dos dados para análise, as seguintes decisões foram tom
 Essas decisões foram tomadas para maximizar a qualidade da análise exploratória, preservando ao máximo a integridade dos dados originais e permitindo extrair o maior número possível de insights relevantes.
 
 ## 📈 Visualizações
+
 Abaixo estão as principais visualizações geradas na análise, todas com a paleta de cores em **verde escuro** para consistência visual:
 
 ### 1. Distribuição de Idade
@@ -252,27 +253,21 @@ Abaixo estão as principais visualizações geradas na análise, todas com a pal
 
 ### 6. Distribuição de Tarifa
 ![Fare Distribution](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/images/fare_distribution.png?raw=true)
-*Histograma da tarifa paga (distribuição original)*
 
 ### 7. Distribuição Log da Tarifa
 ![Fare Log Distribution](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/images/fare_log_distribution.png?raw=true)
-*Distribuição da tarifa em escala logarítmica*
 
 ### 8. Heatmap Sexo x Classe
 ![Sex Class Heatmap](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/images/sex_class_heatmap.png?raw=true)
-*Visualização em calor da interação entre sexo e classe*
 
 ### 9. Sobrevivência por Classe e Sexo
 ![Survival by Class and Sex](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/images/sex_class_survival.png?raw=true)
-*O efeito combinado de gênero e classe social na sobrevivência*
 
 ### 10. Sobrevivência por Classe
 ![survival_by_class](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/images/survival_by_class.png?raw=true)
-*1ª Classe: 63,0% | 2ª Classe: 47,3% | 3ª Classe: 24,2%*
 
 ### 11. Sobrevivência por Faixa Etária
 ![survival_by_age_group](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/images/survival_by_age_group.png?raw=true)
-*Crianças: 53,0% | Adolescentes: 41,6% | Adultos: 36,9% | Idosos: 22,2%*
 
 ## 🔧 Como Reproduzir o Projeto
 Siga os passos abaixo para rodar a análise em sua máquina local.
