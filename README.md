@@ -232,47 +232,47 @@ Essas decisões foram tomadas para maximizar a qualidade da análise exploratór
 Abaixo estão as principais visualizações geradas na análise, todas com a paleta de cores em **verde escuro** para consistência visual:
 
 ### 1. Distribuição de Idade
-![Age Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/age_distribution.png?raw=true)
+![Age Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/age_distribution.png)
 *Histograma da distribuição etária dos passageiros*
 
 ### 2. Distribuição de Idade por Classe
-![Age by Class](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/age_by_class.png?raw=true)
+![Age by Class](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/age_by_class.png)
 *Distribuição de idade em cada classe social*
 
 ### 3. Distribuição por Idade e Sobrevivência
-![Age Boxplot](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/age_boxtop.png?raw=true)
+![Age Boxplot](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/age_boxtop.png)
 *Distribuição de idade entre sobreviventes e não sobreviventes*
 
 ### 4. Distribuição de Classes por Porto
-![Class by Embarked](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/class_by_embed.png?raw=true)
+![Class by Embarked](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/class_by_embed.png)
 *Composição de classes sociais em cada porto de embarque*
 
 ### 5. Matriz de Correlação
-![Correlation Heatmap](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/correlation_heatmap.png?raw=true)
+![Correlation Heatmap](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/correlation_heatmap.png)
 *Heatmap mostrando as correlações entre as principais variáveis numéricas*
 
 ### 6. Distribuição de Tarifa
-![Fare Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/fare_distribution.png?raw=true)
+![Fare Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/fare_distribution.png)
 *Histograma da tarifa paga (distribuição original)*
 
 ### 7. Distribuição Log da Tarifa
-![Fare Log Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/fare_log_distribution.png?raw=true)
+![Fare Log Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/fare_log_distribution.png)
 *Distribuição da tarifa em escala logarítmica*
 
 ### 8. Heatmap Sexo x Classe
-![Sex Class Heatmap](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/sex_class_heatmap.png?raw=true)
+![Sex Class Heatmap](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/sex_class_heatmap.png)
 *Visualização em calor da interação entre sexo e classe*
 
 ### 9. Sobrevivência por Classe e Sexo
-![Survival by Class and Sex](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/sex_class_survival.png?raw=true)
+![Survival by Class and Sex](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/sex_class_survival.png)
 *O efeito combinado de gênero e classe social na sobrevivência*
 
 ### 10. Sobrevivência por Classe
-![survival_by_class](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/survival_by_class.png?raw=true)
+![survival_by_class](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/survival_by_class.png)
 *1ª Classe: 63,0% | 2ª Classe: 47,3% | 3ª Classe: 24,2%*
 
 ### 11. Sobrevivência por Faixa Etária
-![survival_by_age_group](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/survival_by_age_group.png?raw=true)
+![survival_by_age_group](https://github.com/VictorCAlmeida/titanic-data-analysis/raw/main/image/survival_by_age_group.png)
 *Crianças: 53,0% | Adolescentes: 41,6% | Adultos: 36,9% | Idosos: 22,2%*
 
 ## 🔧 Como Reproduzir o Projeto
