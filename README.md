@@ -189,7 +189,7 @@ Para garantir a qualidade da análise, realizei as seguintes transformações:
     ```
 
 ### 3. Análises e Visualizações
-Com os dados limpos e enriquecidos, utilizei `groupby`, tabelas de contingência e matriz de correlação para explorar as relações entre as variáveis e a sobrevivência. Os resultados foram consolidados em gráficos para uma comunicação clara. **Todos os gráficos são salvos automaticamente na pasta `images/` com alta resolução (300 dpi).**
+Com os dados limpos e enriquecidos, utilizei `groupby`, tabelas de contingência e matriz de correlação para explorar as relações entre as variáveis e a sobrevivência. Os resultados foram consolidados em gráficos para uma comunicação clara. **Todos os gráficos são salvos automaticamente na pasta `image/` com alta resolução (300 dpi).**
 
 ### 4. Matriz de Correlação
 Analisei a correlação entre as principais variáveis numéricas:
@@ -229,48 +229,50 @@ Essas decisões foram tomadas para maximizar a qualidade da análise exploratór
 
 ## 📈 Visualizações
 
+Abaixo estão as principais visualizações geradas na análise, todas com a paleta de cores em **verde escuro** para consistência visual:
+
 ### 1. Distribuição de Idade
-![Age Distribution](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/age_distribution.png?raw=true)
+![Age Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/age_distribution.png?raw=true)
 *Histograma da distribuição etária dos passageiros*
 
 ### 2. Distribuição de Idade por Classe
-![Age by Class](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/age_by_class.png?raw=true)
+![Age by Class](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/age_by_class.png?raw=true)
 *Distribuição de idade em cada classe social*
 
 ### 3. Distribuição por Idade e Sobrevivência
-![Age Boxplot](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/age_boxtop.png?raw=true)
+![Age Boxplot](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/age_boxtop.png?raw=true)
 *Distribuição de idade entre sobreviventes e não sobreviventes*
 
 ### 4. Distribuição de Classes por Porto
-![Class by Embarked](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/class_by_embed.png?raw=true)
+![Class by Embarked](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/class_by_embed.png?raw=true)
 *Composição de classes sociais em cada porto de embarque*
 
 ### 5. Matriz de Correlação
-![Correlation Heatmap](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/correlation_heatmap.png?raw=true)
+![Correlation Heatmap](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/correlation_heatmap.png?raw=true)
 *Heatmap mostrando as correlações entre as principais variáveis numéricas*
 
 ### 6. Distribuição de Tarifa
-![Fare Distribution](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/fare_distribution.png?raw=true)
+![Fare Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/fare_distribution.png?raw=true)
 *Histograma da tarifa paga (distribuição original)*
 
 ### 7. Distribuição Log da Tarifa
-![Fare Log Distribution](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/fare_log_distribution.png?raw=true)
+![Fare Log Distribution](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/fare_log_distribution.png?raw=true)
 *Distribuição da tarifa em escala logarítmica*
 
 ### 8. Heatmap Sexo x Classe
-![Sex Class Heatmap](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/sex_class_heatmap.png?raw=true)
+![Sex Class Heatmap](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/sex_class_heatmap.png?raw=true)
 *Visualização em calor da interação entre sexo e classe*
 
 ### 9. Sobrevivência por Classe e Sexo
-![Survival by Class and Sex](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/sex_class_survival.png?raw=true)
+![Survival by Class and Sex](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/sex_class_survival.png?raw=true)
 *O efeito combinado de gênero e classe social na sobrevivência*
 
 ### 10. Sobrevivência por Classe
-![survival_by_class](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/survival_by_class.png?raw=true)
+![survival_by_class](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/survival_by_class.png?raw=true)
 *1ª Classe: 63,0% | 2ª Classe: 47,3% | 3ª Classe: 24,2%*
 
 ### 11. Sobrevivência por Faixa Etária
-![survival_by_age_group](https://github.com/VictorCAlmeida/titanic-analysis/blob/main/image/survival_by_age_group.png?raw=true)
+![survival_by_age_group](https://github.com/VictorCAlmeida/titanic-data-analysis/blob/main/image/survival_by_age_group.png?raw=true)
 *Crianças: 53,0% | Adolescentes: 41,6% | Adultos: 36,9% | Idosos: 22,2%*
 
 ## 🔧 Como Reproduzir o Projeto
@@ -278,8 +280,8 @@ Siga os passos abaixo para rodar a análise em sua máquina local.
 
 1.  **Clone o repositório**
     ```bash
-    git clone https://github.com/VictorCAlmeida/titanic-analysis.git
-    cd titanic-analysis
+    git clone https://github.com/VictorCAlmeida/titanic-data-analysis.git
+    cd titanic-data-analysis
     ```
 
 2.  **Crie e ative um ambiente virtual (recomendado)**
@@ -303,16 +305,16 @@ Siga os passos abaixo para rodar a análise em sua máquina local.
     python Titanic.py
     ```
     
-    **Nota:** O script criará automaticamente a pasta `images/` (se não existir) e salvará todos os gráficos nela com alta resolução.
+    **Nota:** O script criará automaticamente a pasta `image/` (se não existir) e salvará todos os gráficos nela com alta resolução.
 
 ## 📁 Estrutura do Projeto
 ```
-titanic-analysis/
+titanic-data-analysis/
 │
 ├── data/                       # Dados utilizados no projeto
 │   └── titanic_dataset.csv     # (59 KB)
 │
-├── images/                      # Imagens e gráficos gerados automaticamente
+├── image/                      # Imagens e gráficos gerados automaticamente
 │   ├── age_boxtop.png
 │   ├── age_by_class.png
 │   ├── age_distribution.png
@@ -323,8 +325,7 @@ titanic-analysis/
 │   ├── sex_class_heatmap.png
 │   ├── sex_class_survival.png
 │   ├── survival_by_age_group.png
-│   ├── survival_by_class.png
-│   └── ...
+│   └── survival_by_class.png
 │
 ├── Titanic.py                   # Script principal da análise
 └── README.md                     # Documentação principal 
